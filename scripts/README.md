@@ -1,5 +1,5 @@
 # Database Scripts
 
-This folder contains all the initialization scripts that helps us (perhaps convert and) load the Excel sheet into the database tables.
+The load_table_to_mysql.py is the code to get the excel table data into MySQL. We have to change the file from .xlsx to .csv to have this working correctly since we cannot directly import the data into MySQL Workbench. Importing directly to MySQL would not import the data correctly or no data at all. On my load_table_to_mysql.py, the password need to be manually inputed when running the code since my password have '@' in it.
 
-The scripts that are used to modify (indexing, moving, updating, data cleaning, ...) the database tables (after the data is loaded into the database) are also included here.
+The requirements.txt have the require applications/libraries needed to download to have the app running.
