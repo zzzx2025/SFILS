@@ -37,4 +37,10 @@ Command to run app UI (the python app file is named app.py):
 streamlit run app.py
 
 # app.py
-(Continue later)
+This UI app have 6 functions: view all, add new, update, search, delete, and logs. The view all show all of the patrons in the descending order, so you'll see the latest patrons on top. Add new allow us to add new patrons to the database. Update allow us to update existing patrons info. Search allow us to search for patrons. Delete allow us to delete certain patrons. The logs record all the history of what we did and the error that happens. 
+
+# Errors (need fixing)
+When adding a new patron, if an error accures, the increment still happens, and so the patron ID for them will be empty. When adding new patron, need them to be put in available spot between patron ID and not the bottom of the list.
+
+# Credits
+Thanks to Killian for helping with getting the data from excel put into MySQL database (Try doing it myself for a couple of days and couldn't get the full data into MySQL database. Either all the data or some of the data was missing). Thanks to ChatGPT for fixing my app code and get it working.
