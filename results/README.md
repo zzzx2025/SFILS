@@ -2,12 +2,10 @@
 
 This folder contains our findings from this database project.
 
-The findings include details about the library patrons. For example, how many from the age range 0 to 9 years used the library, how many of them were repeat patrons (can be found from total checkouts), how many renewed (can be found from total renewals).
+I found that there are 437115 rows total and 18 patron types. There are 34642 patrons with the age range from 0 to 9 years, 248821 patrons that renew, and 297893 patrons that checkout.
 
 # Performance Metrics
 
-This folder also contains the performance values.
+The performance of the app is stored in the logs folder which shows the history of our actions in the app. It includes the time and date, time it took to finish the action, and other things as well.
 
-Did we store the data in our database appropriately?
-
-This is meant to be a more manageable database with multiple tables. We are not simply dumping the whole Excel sheet into one giant MySQL table.
+Putting the csv data into MySQL database took 50.406 seconds. If it took less than 20 seconds, that mean no data was actually loaded or it was missing data.
