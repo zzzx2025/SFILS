@@ -59,4 +59,4 @@ db.patrons.aggregate([{$group: {_id: "$Home_Library_Definition", patron_count: {
 For the app, we will also be creating a virtual environment to run it. Everything we did for MySQL on the app is the same as the one for MongoDB, so nothing have change for this.
 
 # Acknowledgement
-I would like to acknowledge that Ryder helped clarified some things for me. Since this assignment is similar to assignment 1, I just needed help clarifying some of the instructions, I tend to confuse myself sometimes.
+I would like to acknowledge that Ryder helped clarified some things for me. Since this assignment is similar to assignment 1, I just needed help clarifying some of the instructions, I tend to confuse myself sometimes. I would also like to ackknowledge the use of copilot in VSCode for autofilling some of the code I needed or might need.
