@@ -45,12 +45,14 @@ db.patrons.find({Patron_Type_Definition: "Adult"})
 
 This command will show a list of Patrons who are adults. The list show is limited on the shell, but you can type 'it' to have it show more. But you can narrow down the search by adding more, for example:
 db.patrons.find({Patron_Type_Definition: "Adult", Home_Library_Definition: "Mission"})
+
 <img width="554" height="1111" alt="Screenshot 2025-11-19 205544" src="https://github.com/user-attachments/assets/4e0426bc-70b1-47f6-a3b2-e9919a2d7d44" />
 
 This will look for patrons who are adults and their home library is mission.
 
 With aggregation, we can do stuff like checking the numbers of patrons by their home library
 db.patrons.aggregate([{$group: {_id: "$Home_Library_Definition", patron_count: {$sum: 1}}}, {$sort: {patron_count: -1}}])
+
 <img width="389" height="1118" alt="Screenshot 2025-11-19 211348" src="https://github.com/user-attachments/assets/c7f2e04f-b6a9-4670-8c4d-b6927b9d6d11" />
 
 
