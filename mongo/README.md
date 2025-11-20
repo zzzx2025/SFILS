@@ -5,7 +5,7 @@ This folder contains the submission files for Assignment 2. The remaining folder
 
 Make sure to keep all your Assignment 2 files inside this folder to keep the rest of the folders free from clutter. That way, it will be easier to grade both Assignment 1 and Assignment 2.
 
-#Installation
+# Installation
 To install MongoDB into our local computer/laptop we go to
 https://www.mongodb.com/try/download/community
 https://www.mongodb.com/try/download/shell
@@ -36,7 +36,7 @@ After this, we would have a copy of the csv file data in the mongodb
 
 All the patrons are stored in the sfpl.patrons collection. Each document corresponds to a row in the CSV file. Both the '_id' and 'Patron_ID' are integers and use the same value to make it easier to identify patrons. The 'Provided_Email_Address' and 'Within_San_Francisco_County' are Boolean fields that are stored as real Booleans and not strings. The 'Total_Checkout' and 'Total_Renewals' are integer fields and are stored as numbers, which can be used in comparisons and aggregations. 
 
-#Storing and Retrieving Data
+# Storing and Retrieving Data
 I'll be showing how to store and retrieve data from the mongodb on mongodb shell since the app is easy to use and have the same 6 functions (view all, add new, update, search, delete, and logs) we have for MySQL. On the mongodb shell, to use the database with the data, we put in the command 'use sflp' since sflp is the name of my database.
 
 An example of using the shell to find patrons
@@ -56,5 +56,5 @@ db.patrons.aggregate([{$group: {_id: "$Home_Library_Definition", patron_count: {
 
 For the app, we will also be creating a virtual environment to run it. Everything we did for MySQL on the app is the same as the one for MongoDB, so nothing have change for this.
 
-#Acknowledgement
+# Acknowledgement
 I would like to acknowledge that Ryder helped clarified some things for me. Since this assignment is similar to assignment 1, I just needed help clarifying some of the instructions, I tend to confuse myself sometimes.
