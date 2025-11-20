@@ -7,10 +7,15 @@ Make sure to keep all your Assignment 2 files inside this folder to keep the res
 
 # Installation
 To install MongoDB into our local computer/laptop we go to
+
 https://www.mongodb.com/try/download/community
+
 https://www.mongodb.com/try/download/shell
+
 -install MongoDB shell (CLI)
+
 https://www.mongodb.com/try/download/compass
+
 -install MongoDB Compass (GUI)
 
 (make sure to download the correct tools to use mongodb depending on your OS)
